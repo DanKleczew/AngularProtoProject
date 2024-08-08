@@ -1,0 +1,10 @@
+<div class="une-box">
+    <figure class="une-thumbnail" [class.hidden]="configs.showThumb === '0'">
+        <img [src]="article.largeThumbnail" alt="Vignette de la une">
+    </figure>
+    <div class="une-texte">
+        <h2 class="title" [ngStyle]="titleStyles">{{article.title}}</h2>
+        <p [class.hidden]="configs.showInfos === '0'" [ngStyle]="subtitleStyles">{{infos}}</p>
+        <p class="truncate" [class.hidden]="configs.showSummary === '0'" [ngStyle]="subtitleStyles">{{article.summary}}</p>
+    </div>
+</div>

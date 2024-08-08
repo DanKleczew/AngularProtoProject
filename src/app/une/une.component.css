@@ -1,0 +1,41 @@
+.une-box{
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.une-texte{
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+
+.une-thumbnail img{
+    max-width: 100%;
+    max-height: 40vh;
+    display: block;
+}
+.une-thumbnail {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    overflow: hidden;
+}
+
+h2 {
+    padding-bottom: 10px;
+}
+
+@media screen and (min-width: 1238px) {
+    .une-box{
+        padding-top: 10px;
+    }
+    .une-thumbnail{
+        width: 1180px;
+        height: 600px;
+    }
+    .une-thumbnail img {
+        width:100%;
+        max-height: 600px;
+    }
+}

@@ -1,0 +1,12 @@
+<div class="single-article-box" [class.reverse-row]="configs.thumbPosition === 'left'">
+    <div class="informations-box">
+        <div class="title-container">
+            <h2 class="truncate title" [ngStyle]="titleStyles">{{articleRaw.title}}</h2>
+        </div>
+        <p class="infos" [class.hidden]="configs.showInfos === '0'" [ngStyle]="subtitleStyles">{{infos}}</p>
+        <p class="summary truncate" [class.hidden]="configs.showSummary === '0'" [ngStyle]="subtitleStyles"> {{articleRaw.summary}}</p>
+    </div>
+    <div class="picture" [class.hidden]="configs.showThumb === '0'">
+        <img [src]="articleRaw.thumbnail">
+    </div>
+</div>

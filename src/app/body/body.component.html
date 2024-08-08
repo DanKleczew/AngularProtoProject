@@ -1,0 +1,15 @@
+<div class="body-container" [ngStyle]="backgroundStyle">
+
+    @if (contents && configs){
+    
+        <app-une [configs]="configs" [article]="uneArticle[0]"></app-une>
+    
+        <div class="articles-box">
+            @for(article of allArticlesNoUne; track article.title){
+                <app-article [articleRaw]="article" [configs]="configs"></app-article>
+            }
+        </div>
+    } @else {
+        <p>Loading</p>
+    }
+</div>
